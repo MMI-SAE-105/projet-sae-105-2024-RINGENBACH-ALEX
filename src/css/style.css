@@ -1,0 +1,122 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #B771EB;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+.menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Image pleine largeur avec titre */
+.hero {
+    position: relative;
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Titre avec bande violette */
+.title-bar {
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.title-bar h2 {
+    display: inline-block;
+    background: rgba(183, 113, 235, 0.5);
+    padding: 10px 20px;
+    color: black;
+    font-size: 2em;
+}
+
+/* Texte d'explication */
+.description {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Grille des 6 emplacements */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.grid-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #B771EB;
+    border-radius: 50px;
+    color: #B771EB;
+    cursor: pointer;
+}
+
+.grid-item button:hover {
+    background-color: #B771EB;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #B771EB;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    display: block;
+    margin: 10px 0;
+}
