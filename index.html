@@ -4,71 +4,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'Accueil</title>
+    <title>Robopture - Accueil</title>
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
+
     <header>
-        <div class="logo">Mon Logo</div>
-        <div class="menu-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header-container">
+            <!-- Logo cliquable qui redirige vers la page d'accueil -->
+            <a href="index.html">
+                <img src="/assets/logos/logo.webp" alt="Logo Robopture" class="logo-image">
+            </a>
+
+            <!-- Bouton hamburger -->
+            <button class="menu-button" id="menu-toggle">&#9776;</button>
         </div>
+
+        <!-- Menu déroulant -->
+        <nav class="menu" id="menu">
+            <button class="close-button" id="menu-close">&times;</button>
+            <ul>
+                <br>
+                <h1><a href="">Accueil</a></li>
+                </h1>
+                <li>
+                    <h1><a href="">Roman</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Film</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Livre</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Musique</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Frise</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Contact</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Glossaire</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href=""> à Propos</a>
+                </li>
+                </h1>
+                <li>
+                    <h1><a href="">Autres Projets</a>
+                </li>
+                </h1>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Image pleine largeur avec titre -->
-    <section class="hero">
-        <h1>Titre de la Page</h1>
-    </section>
+    <script src="/src/js/menu.js"></script>
+    <main>
+        <section id="banner">
+            <img src="assets/img/image_accueil.webp" alt="Image principale" class="full-width-image">
+            <h1 class="banner-text">Robopture</h1>
+        </section>
+        <section id="green-strip">
+            <h3>Notre Festival</h3>
+        </section>
+        <section id="description">
+            <p>Bienvenue dans l'univers des robots : entre histoire, culture et imagination !
 
-    <!-- Titre avec bande violette -->
-    <section class="title-bar">
-        <h2>Titre de Section</h2>
-    </section>
+                Plongez dans un monde où les machines prennent vie, qu'elles soient issues de l'ingéniosité humaine ou
+                de l'imaginaire
+                collectif.
 
-    <!-- Texte d'explication -->
-    <section class="description">
-        <p>Voici un petit texte pour expliquer le projet. Vous pouvez modifier ce texte ici.</p>
-    </section>
+                Explorez des articles passionnants qui mettent en lumière le rôle des robots dans nos récits et notre
+                quotidien.
+                Découvrez :
 
-    <!-- Section des 6 emplacements -->
-    <section class="grid">
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 1">
-            <button>Plus d'info</button>
-        </div>
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 2">
-            <button>Plus d'info</button>
-        </div>
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 3">
-            <button>Plus d'info</button>
-        </div>
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 4">
-            <button>Plus d'info</button>
-        </div>
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 5">
-            <button>Plus d'info</button>
-        </div>
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/150" alt="Image 6">
-            <button>Plus d'info</button>
-        </div>
-    </section>
+                <li>"Five Nights at Freddy's", un livre captivant qui vous entraîne dans un univers où les robots sont à
+                    la fois fascinants
+                    et terrifiants.</li>
+                <li>"Transformers 3", un film culte où des machines extraterrestres livrent une bataille épique pour
+                    sauver (ou détruire) la
+                    Terre.</li>
+                <li>"Les Humains, les Robots et la Paix", une réflexion approfondie sur l'avenir de la coexistence entre
+                    l'homme et les
+                    robots.</li>
+                <li>Roméo, le personnage émouvant du jeu vidéo "Lies of P", qui réinvente l'histoire de Pinocchio sous
+                    un angle mécanique.
+                    Et ce n'est pas tout : parcourez notre frise chronologique interactive, qui retrace l'évolution des
+                    robots, de leurs
+                    premières conceptions jusqu'aux innovations les plus futuristes.</li>
 
-    <!-- Footer -->
+                Que vous soyez passionné de science-fiction, curieux de nouvelles technologies ou amateur d'histoire,
+                notre site est
+                conçu pour éveiller votre curiosité et enrichir votre vision du monde des robots.
+            </p>
+        </section>
+        <section id="images">
+            <div class="image-block">
+                <h3>Roman : into the pit</h3>
+                <img src="assets/img/image_itp.webp" alt="Image 1" loading="lazy">
+                <a href="reservation.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Film : Transformers 3</h3>
+                <img src="assets/img/image_Tr3.webp" alt="Image 2" loading="lazy">
+                <a href="alaffiche.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Réalisateur : Michael Bay</h3>
+                <img src="assets/img/Image_MB.webp" alt="Image 3" loading="lazy">
+                <a href="apropos.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Livre : Les hommes les robot et la paix</h3>
+                <img src="assets/img/image_livre.webp" alt="Image 4" loading="lazy">
+                <a href="invite.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Musique : Roméo thème</h3>
+                <img src="assets/img/image_musique.webp" alt="Image 5" loading="lazy">
+                <a href="infopratique.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Frise : les premiers robots</h3>
+                <img src="assets/img/image_frise.webp" alt="Image 6" loading="lazy">
+                <a href="contacts.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
     <footer>
-        <a href="#">Lien 1</a>
-        <a href="#">Lien 2</a>
-        <a href="#">Lien 3</a>
-        <a href="#">Lien 4</a>
+        <section class="text-lines">
+            <p class="text-line">Menu</p>
+            <p class="text-line">Accueil</p>
+            <p class="text-line">Romans</p>
+            <p class="text-line">Film</p>
+            <p class="text-line">Réalisateur</p>
+            <p class="text-line">Musique</p>
+            <p class="text-line">Frise</p>
+            <br>
+            <p class="text-line">CONTACT</p>
+            <p class="text-line">4 Place Lucien Tharradin</p>
+            <p class="text-line">25 200 Montbéliard</p>
+            <p class="text-line">03 81 99 47 34</p></br>
+            <p class="text-line">loisirs@territoiredebelfort.fr</p>
+            <br>
+            <p class="text-line"></p>Nous suivre : </br>
+        </section>
+        <div class="footer-logos">
+            <img src="assets/logos/facebook1.avif" alt="Logo 1" class="footer-logo">
+            <img src="assets/logos/instagram1.avif" alt="Logo 2" class="footer-logo">
+            <img src="assets/logos/logo-MMI.webp" alt="Logo 3" class="footer-logo">
+        </div>
     </footer>
+
 </body>
 
 </html>

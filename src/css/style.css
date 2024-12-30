@@ -1,122 +1,267 @@
-/* Styles généraux */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+@import "/src/css/normalize.css";
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Header */
-header {
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+header {
+    background-color: #B771EB;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-image {
+    width: 62px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.menu-button {
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    z-index: 2000;
+    margin-right: 50px;
+    /* Place le bouton au-dessus */
+}
+
+/* Effet au survol */
+.menu-button:hover {
+    color: #B771EB;
+    /* Change la couleur au survol */
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFEE07;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Section violette */
+
+/* Boutons d'infos */
+.image-block a button {
+    display: inline-block;
+    background-color: #B771EB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-block {
+    text-align: center;
+    /* Centre tout le contenu de l'image-block */
+    margin: 0 auto;
+    /* Centre le bloc sur la page */
+    width: 300px;
+    /* Assurez-vous que le bloc ait la même largeur que l'image */
+}
+
+.image-block img {
+    width: 300px;
+    /* Largeur fixe */
+    height: 200px;
+    /* Hauteur fixe */
+    object-fit: cover;
+    /* Pour éviter les déformations */
+    display: block;
+    /* Assure que l'image ne dépasse pas */
+    margin: 0 auto;
+    /* Centre l'image horizontalement */
+}
+
+.image-block button {
+    margin-top: 10px;
+    /* Ajoute de l'espace entre l'image et le bouton */
+    display: block;
+    /* Force le bouton à être sur une ligne distincte */
+    margin: 0 auto;
+    /* Centre le bouton */
+}
+
+.image-block a button:hover {
     background-color: #B771EB;
 }
 
-.logo {
-    color: white;
-    font-size: 1.5em;
+/* Ajustement du texte sur la bannière */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFEE07;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
-.menu-hamburger {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#green-strip {
+    background-color: rgba(183, 113, 235, 0.2);
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#green-strip h3 {
+    color: #000;
+    font-size: 1em;
+    margin: 0;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #B771EB;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #B771EB;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B771EB;
+    color: white;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-}
-
-/* Image pleine largeur avec titre */
-.hero {
-    position: relative;
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
 }
 
-.hero h1 {
-    color: white;
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+.menu.active {
+    transform: translateY(0);
 }
 
-/* Titre avec bande violette */
-.title-bar {
-    text-align: center;
-    position: relative;
-    margin: 20px 0;
-}
-
-.title-bar h2 {
-    display: inline-block;
-    background: rgba(183, 113, 235, 0.5);
-    padding: 10px 20px;
-    color: black;
-    font-size: 2em;
-}
-
-/* Texte d'explication */
-.description {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #333;
-}
-
-/* Grille des 6 emplacements */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.grid-item {
-    text-align: center;
-}
-
-.grid-item img {
-    width: 100%;
-    max-width: 150px;
-    border-radius: 10px;
-}
-
-.grid-item button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: white;
-    border: 2px solid #B771EB;
-    border-radius: 50px;
+.menu ul li a:hover {
     color: #B771EB;
-    cursor: pointer;
 }
 
-.grid-item button:hover {
-    background-color: #B771EB;
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: left;
     color: white;
 }
 
-/* Footer */
-footer {
-    background-color: #B771EB;
-    padding: 20px;
-    text-align: center;
+footer p {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-footer a {
-    display: block;
-    margin: 10px 0;
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.text-lines {
+    padding-left: 20px;
+}
+
+.text-line {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        max-width: 390px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .banner-text {
+        font-size: 1.5em;
+    }
+
+    #description {
+        max-width: 90%;
+    }
+
+    .image-block img {
+        max-width: 250px;
+    }
 }
