@@ -265,3 +265,108 @@ footer p {
         max-width: 250px;
     }
 }
+
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Première zone de texte */
+.text-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section image-text (image à gauche, texte à droite) */
+.image-text-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 40%;
+    margin-right: 20px;
+    text-align: center;
+    /* Centrer l'image et la légende */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+.text-container {
+    width: 60%;
+}
+
+.image-text {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Deuxième zone de texte */
+.text-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image à droite avec mini légende au-dessus et texte à gauche */
+.image-right-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.text-left {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.image-right {
+    width: 40%;
+}
+
+.mini-caption {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.image-right img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dernière zone de texte et image en bas */
+.text-bottom-image {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-bottom img {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
