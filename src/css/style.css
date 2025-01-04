@@ -378,3 +378,42 @@ footer p {
 .logo-drp:hover {
     opacity: 0.8;
 }
+
+.film-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.film-image {
+    width: 300px;
+    /* Ajustez la largeur de l'image si nécessaire */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centre l'image horizontalement */
+    border-radius: 8px;
+    /* Coins légèrement arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre légère */
+}
+
+.film-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.separator {
+    height: 2px;
+    width: 80%;
+    background-color: #000000;
+    /* Couleur violette pour la barre */
+    margin: 20px auto;
+    /* Ajoute de l'espace au-dessus et en dessous */
+    border-radius: 1px;
+}
