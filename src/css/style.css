@@ -384,68 +384,85 @@ footer p {
     border-radius: 1px;
 }
 
-.contact {
+.contact-page {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #000000;
-    /* Écriture en noir */
+    /* Texte noir */
     display: flex;
     justify-content: center;
     /* Centre horizontalement */
     align-items: center;
     /* Centre verticalement */
-    height: 100vh;
-    /* Utilise toute la hauteur de l'écran */
-}
-
-/* Conteneur principal */
-.contact-section {
-    display: flex;
     flex-direction: column;
-    /* Les blocs sont empilés verticalement */
-    gap: 20px;
-    /* Ajoute de l'espace entre les blocs */
-    width: 400px;
-    /* Largeur fixe */
+    /* Empile les éléments verticalement */
+    min-height: 100vh;
+    /* Hauteur minimale de la page */
+    box-sizing: border-box;
 }
 
-/* Blocs individuels */
-.form-block {
+/* Conteneur principal du formulaire */
+.contact-menu {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    /* Les éléments dans chaque bloc sont empilés */
-    gap: 10px;
-    /* Espace entre les éléments dans un bloc */
+    max-width: 400px;
+    /* Largeur maximale */
+    width: calc(100% - 20px);
+    /* Réduction de 10px de chaque côté */
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    /* Ajout d'un espace avec le footer */
 }
 
-/* Style des étiquettes */
+/* Titre principal */
+.contact-menu h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Groupes de champs */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
 }
 
-/* Style des champs de formulaire */
+/* Champs de saisie */
 input,
 textarea {
-    width: 100%;
+    width: calc(100% - 20px);
+    /* Réduction de 10px de chaque côté */
     padding: 10px;
     font-size: 14px;
     border: 1px solid #cccccc;
     border-radius: 5px;
+    background-color: #f7f7f7;
+    /* Fond gris clair */
     box-sizing: border-box;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    margin-left: 10px;
+    /* Centrage interne */
 }
 
 input:focus,
 textarea:focus {
     border-color: #6A0DAD;
     /* Violet lors de la mise au point */
+    background-color: #ffffff;
+    /* Fond blanc au focus */
 }
 
 /* Zone de texte pour les commentaires */
@@ -466,9 +483,12 @@ textarea {
     padding: 10px;
     cursor: not-allowed;
     /* Non fonctionnel */
-    width: 100%;
+    width: calc(100% - 20px);
+    /* Réduction de 10px de chaque côté */
+    text-align: center;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
 
 .submit-button:hover {
