@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robopture - Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo cliquable qui redirige vers la page d'accueil -->
+            <a href="/fr/accueil.html">
+                <img src="/assets/logos/logo.webp" alt="Logo Robopture" class="logo-image">
+            </a>
+            <div class="logo-drp"><a href="">
+                    <img src="/assets/img/drapeau_anglais.webp" alt="Logo Robopture" class="logo-image">
+                </a></div>
+            <!-- Bouton hamburger -->
+            <button class="menu-button" id="menu-toggle">&#9776;</button>
+        </div>
+
+        <!-- Menu déroulant -->
+        <nav class="menu" id="menu">
+            <button class="close-button" id="menu-close">&times;</button>
+            <ul>
+                <li>
+                    <h1><a href="/fr/accueil.html">Accueil</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/roman.html">Roman</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/film.html">Film</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/Réalisateur.html">Réalisateur</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/livre.html">Livre</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/musique.html">Musique</a></h1>
+                </li>
+                <li>
+                    <h1><a href="">Frise</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/contact.html">Contact</a></h1>
+                </li>
+                <li>
+                    <h1><a href="">Glossaire</a></h1>
+                </li>
+                <li>
+                    <h1><a href="">À Propos</a></h1>
+                </li>
+                <li>
+                    <h1><a href="">Autres Projets</a></h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="/src/js/menu.js"></script>
+    <main>
+        <section id="banner">
+            <img src="/assets/img/image_contact.webp" alt="Image principale" class="full-width-image">
+            <h1 class="banner-text">Contact</h1>
+        </section>
+        <div class="contact-menu">
+            <h1>Contactez le Support</h1>
+            <form>
+                <!-- Nom et prénom -->
+                <div class="form-group">
+                    <label for="name">Votre nom et prénom</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                </div>
+
+                <!-- Adresse email -->
+                <div class="form-group">
+                    <label for="email">Votre adresse mail</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse mail" required>
+                </div>
+
+                <!-- Commentaire -->
+                <div class="form-group">
+                    <label for="message">Votre commentaire</label>
+                    <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+                </div>
+
+                <!-- Bouton Envoyer -->
+                <button type="submit" class="submit-button" disabled>Envoyer</button>
+            </form>
+        </div>
+
+</html>

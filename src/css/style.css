@@ -38,13 +38,10 @@ header {
     color: rgb(0, 0, 0);
     z-index: 2000;
     margin-right: 50px;
-    /* Place le bouton au-dessus */
 }
 
-/* Effet au survol */
 .menu-button:hover {
     color: #B771EB;
-    /* Change la couleur au survol */
 }
 
 .close-button {
@@ -80,9 +77,6 @@ header {
     text-align: center;
 }
 
-/* Section violette */
-
-/* Boutons d'infos */
 .image-block a button {
     display: inline-block;
     background-color: #B771EB;
@@ -95,40 +89,29 @@ header {
 
 .image-block {
     text-align: center;
-    /* Centre tout le contenu de l'image-block */
     margin: 0 auto;
-    /* Centre le bloc sur la page */
     width: 300px;
-    /* Assurez-vous que le bloc ait la même largeur que l'image */
 }
 
 .image-block img {
     width: 300px;
-    /* Largeur fixe */
     height: 200px;
-    /* Hauteur fixe */
     object-fit: cover;
-    /* Pour éviter les déformations */
     display: block;
-    /* Assure que l'image ne dépasse pas */
     margin: 0 auto;
-    /* Centre l'image horizontalement */
 }
 
 .image-block button {
     margin-top: 10px;
-    /* Ajoute de l'espace entre l'image et le bouton */
     display: block;
-    /* Force le bouton à être sur une ligne distincte */
     margin: 0 auto;
-    /* Centre le bouton */
+
 }
 
 .image-block a button:hover {
     background-color: #B771EB;
 }
 
-/* Ajustement du texte sur la bannière */
 .banner-text {
     position: absolute;
     top: 50%;
@@ -145,7 +128,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    /* Applique la police Roboto */
     text-align: center;
     background-color: #f4f4f4;
     width: 100%;
@@ -252,7 +234,6 @@ footer p {
     }
 }
 
-/* Première zone de texte */
 .text-section {
     padding: 20px;
     background-color: #fff;
@@ -260,7 +241,6 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Section image-text (image à gauche, texte à droite) */
 .image-text-section {
     display: flex;
     align-items: center;
@@ -271,7 +251,7 @@ footer p {
     width: 40%;
     margin-right: 20px;
     text-align: center;
-    /* Centrer l'image et la légende */
+
 }
 
 .image-container img {
@@ -295,7 +275,6 @@ footer p {
     color: #333;
 }
 
-/* Deuxième zone de texte */
 .text-section {
     padding: 20px;
     background-color: #fff;
@@ -303,7 +282,6 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Image à droite avec mini légende au-dessus et texte à gauche */
 .image-right-text-section {
     display: flex;
     align-items: center;
@@ -333,7 +311,6 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Dernière zone de texte et image en bas */
 .text-bottom-image {
     padding: 20px;
     background-color: #fff;
@@ -361,17 +338,11 @@ footer p {
 
 .logo-drp {
     width: 30px;
-    /* Réduit la taille de l'image */
     height: auto;
-    /* Maintient les proportions de l'image */
     position: fixed;
-    /* Positionne l'image de manière fixe par rapport à la fenêtre */
     top: 7px;
-    /* Distance depuis le haut de la fenêtre */
     right: 120px;
-    /* Décalage de 40px depuis la droite (ajout de 30px) */
     z-index: 1000;
-    /* Place l'image au-dessus des autres éléments */
     cursor: pointer;
 
 }
@@ -387,15 +358,11 @@ footer p {
 
 .film-image {
     width: 300px;
-    /* Ajustez la largeur de l'image si nécessaire */
     height: auto;
     display: block;
     margin: 0 auto;
-    /* Centre l'image horizontalement */
     border-radius: 8px;
-    /* Coins légèrement arrondis */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Ajoute une ombre légère */
 }
 
 .film-description {
@@ -413,8 +380,98 @@ footer p {
     height: 2px;
     width: 80%;
     background-color: #000000;
-    /* Couleur violette pour la barre */
     margin: 20px auto;
-    /* Ajoute de l'espace au-dessus et en dessous */
     border-radius: 1px;
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000000;
+    /* Écriture en noir */
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+    /* Utilise toute la hauteur de l'écran */
+}
+
+/* Conteneur principal */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    /* Les blocs sont empilés verticalement */
+    gap: 20px;
+    /* Ajoute de l'espace entre les blocs */
+    width: 400px;
+    /* Largeur fixe */
+}
+
+/* Blocs individuels */
+.form-block {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* Les éléments dans chaque bloc sont empilés */
+    gap: 10px;
+    /* Espace entre les éléments dans un bloc */
+}
+
+/* Style des étiquettes */
+label {
+    font-weight: bold;
+}
+
+/* Style des champs de formulaire */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6A0DAD;
+    /* Violet lors de la mise au point */
+}
+
+/* Zone de texte pour les commentaires */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Bouton envoyer */
+.submit-button {
+    background-color: #6A0DAD;
+    /* Violet */
+    color: #ffffff;
+    /* Texte blanc */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: not-allowed;
+    /* Non fonctionnel */
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #550A92;
+    /* Violet plus foncé au survol */
 }
