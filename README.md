@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Ringenbach
+- PRÉNOM : Alex
+- GROUPE : C1
 - URL du site :
 - URL FIGMA :
