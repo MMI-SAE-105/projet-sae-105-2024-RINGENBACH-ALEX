@@ -1,0 +1,121 @@
+/* Style global pour la frise chronologique */
+body.timeline-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Ligne horizontale pour les siècles */
+.horizontal-line {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #B771EB;
+}
+
+/* Conteneur principal de la frise */
+.timeline-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Ligne verticale */
+.vertical-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 4100px;
+    background-color: #B771EB;
+    z-index: 1;
+}
+
+/* Événements */
+.event {
+    position: relative;
+    width: 50%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.event-left {
+    left: -60%;
+    /* Événement à gauche */
+    text-align: right;
+}
+
+.event-right {
+    left: 60%;
+    /* Événement à droite */
+    text-align: left;
+}
+
+/* Images des événements */
+.event-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Description des événements */
+.event-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    max-width: 300px;
+}
+
+.vertical-line::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    /* Positionne au-dessus de la ligne */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #B771EB;
+    border-radius: 50%;
+    /* Crée un cercle */
+    z-index: 2;
+}
+
+/* Triangle à la fin de la ligne */
+.vertical-line::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    /* Positionne en dessous de la ligne */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #B771EB;
+    /* Triangle pointant vers le bas */
+    z-index: 2;
+}

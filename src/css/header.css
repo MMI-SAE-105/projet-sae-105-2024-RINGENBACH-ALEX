@@ -27,3 +27,9 @@ header {
     height: 68px;
     object-fit: contain;
 }
+
+/* Header */
+.header-container {
+    text-align: center;
+    color: white;
+}

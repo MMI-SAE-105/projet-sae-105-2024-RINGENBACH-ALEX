@@ -113,14 +113,6 @@ body {
     color: #333;
 }
 
-/* Header */
-.header-container {
-    background-color: #6A0DAD;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
 /* Titre principal */
 .page-title {
     text-align: center;
@@ -150,7 +142,6 @@ body {
     font-size: 1.2em;
     color: white;
     font-weight: bold;
-    height: 100px;
     /* Hauteur des bandes */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -165,7 +156,7 @@ body {
 
 /* Bandes à gauche */
 .band-left {
-    background-color: #6A0DAD;
+    background-color: #B771EB;
     margin-left: 0;
     margin-right: auto;
     width: 50%;
@@ -176,7 +167,7 @@ body {
 
 /* Bandes à droite */
 .band-right {
-    background-color: #FF9900;
+    background-color: #B771EB;
     margin-left: auto;
     margin-right: 0;
     width: 50%;

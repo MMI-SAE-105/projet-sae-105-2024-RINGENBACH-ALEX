@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robopture - Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo cliquable qui redirige vers la page d'accueil -->
+            <a href="/fr/index.html">
+                <img src="/assets/logos/logo.webp" alt="Logo Robopture" class="logo-image">
+            </a>
+            <div class="logo-drp"><a href="">
+                    <img src="/assets/img/drapeau_anglais.webp" alt="Logo Robopture" class="logo-image">
+                </a></div>
+            <!-- Bouton hamburger -->
+            <button class="menu-button" id="menu-toggle">&#9776;</button>
+        </div>
+
+        <!-- Menu déroulant -->
+        <nav class="menu" id="menu">
+            <button class="close-button" id="menu-close">&times;</button>
+            <ul>
+                <li>
+                    <h1><a href="/fr/index.html">Accueil</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/roman.html">Roman</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/film.html">Film</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/Réalisateur.html">Réalisateur</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/livre.html">Livre</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/musique.html">Musique</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/frise.html">Frise</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/contact.html">Contact</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/glossaire.html">Glossaire</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/apropos.html">À Propos</a></h1>
+                </li>
+                <li>
+                    <h1><a href="/fr/autresprojets.html">Autres Projets</a></h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="/src/js/menu.js"></script>
+    <main>
+        <section id="banner">
+            <img src="/assets/img/image_accueil.webp" alt="Image principale" class="full-width-image">
+            <h1 class="banner-text">Robopture</h1>
+        </section>
+        <section id="green-strip">
+            <h3>Notre Site </h3>
+        </section>
+
+        <body class="timeline-page">
+            <main>
+                <!-- Ligne horizontale pour les dates -->
+                <div class="horizontal-line">
+                    <span class="date" style="left: 10%;">300 Av-JC</span>
+                    <span class="date" style="left: 30%;">1495</span>
+                    <span class="date" style="left: 50%;">1738</span>
+                    <span class="date" style="left: 70%;">1956</span>
+                    <span class="date" style="left: 90%;">2020</span>
+                </div>
+
+                <!-- Ligne verticale avec les événements -->
+                <div class="timeline-container">
+                    <div class="vertical-line"></div>
+
+                    <!-- Événement 1 -->
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-1.webp" alt="Automate de Philon" class="event-image">
+                        <p class="event-description">
+                            Création du premier automate par Philon de Byzance en 300 Av-JC il ne savais juste que
+                            servir de
+                            l’eau
+                        </p>
+                    </div>
+
+                    <!-- Événement 2 -->
+                    <div class="event event-right">
+                        <img src="/assets/img/Frise-2.webp" alt="Chevalier mécanique" class="event-image">
+                        <p class="event-description">
+                            1495 : Léonard de Vinci conçoit un chevalier mécanique capable de mouvements de base,
+                            considéré
+                            comme l'un des premiers
+                            exemples de robot humanoïde.
+                        </p>
+                    </div>
+
+                    <!-- Événement 3 -->
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-3.webp" alt="Canard mécanique de Vaucanson" class="event-image">
+                        <p class="event-description">
+                            1738 : Jacques de Vaucanson, un ingénieur français, construit plusieurs automates, dont un
+                            célèbre
+                            canard mécanique
+                            capable de simuler des mouvements digestifs.
+                        </p>
+                    </div>
+
+                    <!-- Événement 4 -->
+                    <div class="event event-right">
+                        <img src="/assets/img/Frise-4.webp" alt="Unimation" class="event-image">
+                        <p class="event-description">
+                            1800s : Les automates deviennent populaires dans les maisons royales et lors des
+                            expositions, avec
+                            des créations comme
+                            celles de Pierre Jaquet-Droz, un horloger suisse qui crée des poupées mécaniques complexes
+                            capables
+                            d'écrire ou de
+                            dessiner.
+                        </p>
+                    </div>
+
+                    <!-- Événement 5 -->
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-5.webp" alt="Robot pandémie COVID-19" class="event-image">
+                        <p class="event-description">
+                            1956 : La première entreprise de robotique, Unimation, est fondée par George Devol et Joseph
+                            Engelberger. Ils
+                            développent des robots industriels capables de souder et de manipuler des objets lourds.
+                        </p>
+                    </div>
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-5.webp" alt="Automate de Philon" class="event-image">
+                        <p class="event-description">
+                            1961 : Le premier robot industriel, Unimate, est installé dans une usine de General Motors.
+                            Il est
+                            capable de déplacer
+                            des pièces métalliques lourdes et de les souder
+                        </p>
+                    </div>
+
+                    <!-- Événement 2 -->
+                    <div class="event event-right">
+                        <img src="/assets/img/Frise-7.webp" alt="Chevalier mécanique" class="event-image">
+                        <p class="event-description">
+                            1986 : Honda commence le développement de son projet de robot bipède, qui conduira à la
+                            création du
+                            robot ASIMO dans les
+                            années 2000.
+                        </p>
+                    </div>
+
+                    <!-- Événement 3 -->
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-8.webp" alt="Canard mécanique de Vaucanson" class="event-image">
+                        <p class="event-description">
+                            1997 : La NASA lance le rover Sojourner sur Mars, l'un des premiers robots explorateurs à se
+                            poser
+                            sur une autre
+                            planète.
+                        </p>
+                    </div>
+
+                    <!-- Événement 4 -->
+                    <div class="event event-right">
+                        <img src="/assets/img/Frise-9.webp" alt="Unimation" class="event-image">
+                        <p class="event-description">
+                            2002 : Roomba, un aspirateur robotique développé par iRobot, devient le premier robot
+                            domestique
+                            largement adopté par le
+                            grand public.
+                        </p>
+                    </div>
+
+                    <!-- Événement 5 -->
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-10.webp" alt="Robot pandémie COVID-19" class="event-image">
+                        <p class="event-description">
+                            2015 : Boston Dynamics dévoile Spot, un robot quadrupède capable de se déplacer de manière
+                            autonome
+                            sur des terrains
+                            variés, ouvrant la voie à des applications dans la construction et la surveillance.
+                        </p>
+                    </div>
+                    <div class="event event-left">
+                        <img src="/assets/img/Frise-11.webp" alt="Robot pandémie COVID-19" class="event-image">
+                        <p class="event-description">
+                            2020 : Les robots sont utilisés pour des missions liées à la pandémie de COVID-19, comme la
+                            désinfection d'espaces
+                            publics ou l'assistance aux hôpitaux.
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </body>
+
+</html>
