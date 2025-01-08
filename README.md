@@ -6,5 +6,5 @@
 - NOM : Ringenbach
 - PRÉNOM : Alex
 - GROUPE : C1
-- URL du site :
-- URL FIGMA :
+- URL du site : http://robopture.alex-ringenbach.fr
+- URL FIGMA : https://www.figma.com/proto/TnmC6wbrp9yDpJZkVvvlGb/Alex_Ringenbach_MMI1_C1_Maquette-projet_individuelle?node-id=0-1&p=f&t=Kf7ayeHjSKhmSdHg-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=58%3A424
