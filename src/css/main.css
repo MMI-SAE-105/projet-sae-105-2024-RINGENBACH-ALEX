@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0;
     font-family: "Inria Sans", serif;
     text-align: center;
@@ -7,6 +8,9 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 video {
@@ -22,4 +26,13 @@ video {
 .image-bottom img {
     width: 100%;
     height: auto;
+}
+
+.image-right img {
+    width: 100%;
+    height: auto;
+}
+
+.image-right {
+    margin: 15px;
 }
