@@ -1,8 +1,8 @@
 footer {
-    background-color: #000000;
+    background-color: var(--noir);
     padding: 20px;
     text-align: left;
-    color: white;
+    color: var(--blanc);
 }
 
 footer p {

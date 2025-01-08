@@ -4,8 +4,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #B771EB;
-    color: white;
+    background-color: var(--violet);
+    color: var(--blanc);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 .menu-button:hover {
-    color: #B771EB;
+    color: var(--violet);
 }
 
 .close-button {
@@ -50,7 +50,7 @@
 }
 
 .menu ul li a:hover {
-    color: #B771EB;
+    color: var(--violet);
 
 }
 

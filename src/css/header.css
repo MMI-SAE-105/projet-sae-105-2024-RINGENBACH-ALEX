@@ -14,7 +14,7 @@
 }
 
 header {
-    background-color: #B771EB;
+    background-color: var(--violet);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -31,5 +31,5 @@ header {
 /* Header */
 .header-container {
     text-align: center;
-    color: white;
+    color: var(--blanc);
 }
