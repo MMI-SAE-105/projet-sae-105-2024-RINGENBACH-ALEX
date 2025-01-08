@@ -49,12 +49,11 @@
 
 }
 
-.menu ul li a:hover {
-    color: var(--violet);
-
-}
-
 .menu ul {
     list-style: none;
+    padding: 0;
+}
 
+.menu ul li a {
+    color: black;
 }
